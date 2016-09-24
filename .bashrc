@@ -119,3 +119,6 @@ fi
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/code
 source /usr/local/bin/virtualenvwrapper.sh
+
+#upgrade all pip packages
+alias pipup='pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs pip install -U'
