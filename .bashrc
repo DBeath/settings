@@ -118,4 +118,12 @@ fi
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/code
+export PYTHONDONTWRITEBYTECODE=1
 source /usr/local/bin/virtualenvwrapper.sh
+
+#upgrade all pip packages
+alias pipup='pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs pip install -U'
+
+alias aptup='sudo apt update && sudo apt upgrade -y'
+
+alias auctorial='cd ~/code/flask-feedrsub && workon auctorial && export FLASK_APP=application.py'

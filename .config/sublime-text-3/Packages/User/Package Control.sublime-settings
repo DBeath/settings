@@ -6,9 +6,11 @@
 	"installed_packages":
 	[
 		"Anaconda",
+		"Babel",
 		"GitGutter",
+		"Indent XML",
 		"Markdown Preview",
 		"Package Control",
-		"SideBarEnhancements"
+		"TypeScript"
 	]
 }
